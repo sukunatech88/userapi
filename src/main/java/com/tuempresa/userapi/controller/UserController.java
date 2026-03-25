@@ -16,6 +16,13 @@ public class UserController {
 
     private final UserService userService;
 
+
+    @Operation(summary = "Registrar usuario", description = "Permite registrar un usuario con sus teléfonos")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "201", description = "Usuario creado correctamente"),
+            @ApiResponse(responseCode = "400", description = "Datos inválidos"),
+            @ApiResponse(responseCode = "409", description = "Correo ya registrado")
+    })
     @PostMapping
     public ResponseEntity<UserResponse> register(@Valid @RequestBody UserRegisterRequest request) {
         UserResponse response = userService.register(request);

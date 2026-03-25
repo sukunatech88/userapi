@@ -5,10 +5,6 @@ spring:
     username: sa
     password:
 
-springdoc:
-  swagger-ui:
-    path: /swagger-ui.html
-
   h2:
     console:
       enabled: true
@@ -30,3 +26,7 @@ app:
   jwt:
     secret: "M7x9Qp2Lz8Vn4Kc1Rt6Yw3Hs9Df5Jm2Nx8Qa4Uv7Be1Tp6Kr9"
     expiration-ms: 86400000
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
