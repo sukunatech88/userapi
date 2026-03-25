@@ -151,6 +151,7 @@ server:
 POST /api/users
 
  - Request
+
 {
 "name": "Daniel Gallo",
 "email": "daniel@gallo.org",
