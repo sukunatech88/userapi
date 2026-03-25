@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:userdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8090
+
+app:
+  jwt:
+    secret: "M7x9Qp2Lz8Vn4Kc1Rt6Yw3Hs9Df5Jm2Nx8Qa4Uv7Be1Tp6Kr9"
+    expiration-ms: 86400000
