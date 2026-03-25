@@ -1,4 +1,4 @@
-# 🚀 User API - Registro de Usuarios
+# User API - Registro de Usuarios
 
 API REST desarrollada en **Spring Boot** para el registro de usuarios, cumpliendo reglas de validación, persistencia en base de datos en memoria y generación de token JWT.
 
